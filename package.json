@@ -1,0 +1,21 @@
+{
+  "name": "cahfe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "pages": "node make_pages.js",
+    "cards": "node cutout_cards.js",
+    "start": "node check_pdf_exists.js && npm install && node make_pages.js && node cutout_cards.js"
+  },
+  "dependencies": {
+    "assert": "^2.0.0",
+    "bluebird": "^3.7.2",
+    "canvas": "^2.6.1",
+    "fast-average-color": "^6.0.2",
+    "image-clipper": "^0.4.4",
+    "jimp": "^0.10.3",
+    "pdfjs-dist": "^2.3.200",
+    "progress": "^2.0.3"
+  }
+}
